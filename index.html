@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- BÀI TẬP 1: TÍNH TIỀN LƯƠNG NHÂN VIÊN  -->
+        <div class="bai1">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center">BT1: TÍNH TIỀN LƯƠNG NHÂN VIÊN</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-gruop">
+                        <p>TIỀN LƯƠNG (1 NGÀY)</p>
+                        <input class="form-control" type="number" id="tienLuong">
+                        <br>
+                        <div class="form-gruop">
+                            <p>SỐ NGÀY LÀM</p>
+                            <input class="form-control" type="number" id="soNgaylam">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnTinhTien" class="btn btn-success">TÍNH TIỀN</button>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="TongLuong">Kết Quả</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- BÀI TẬP 2: TÍNH GIÁ TRỊ TRUNG BÌNH  -->
+        <div class="bai2">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center">BT2: TÍNH GIÁ TRỊ TRUNG BÌNH</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-gruop">
+                        <div class="form-gruop">
+                            <p>SỐ THỨ NHẤT</p>
+                            <input class="form-control" type="number" id="numBer1">
+                        </div>
+                        <div class="form-gruop">
+                            <p>SỐ THỨ HAI</p>
+                            <input class="form-control" type="number" id="numBer2">
+                        </div>
+                        <div class="form-gruop">
+                            <p>SỐ THỨ BA</p>
+                            <input class="form-control" type="number" id="numBer3">
+                        </div>
+                        <div class="form-gruop">
+                            <p>SỐ THỨ TƯ</p>
+                            <input class="form-control" type="number" id="numBer4">
+                        </div>
+                        <div class="form-gruop">
+                            <p>SỐ THỨ NĂM</p>
+                            <input class="form-control" type="number" id="numBer5">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnKetqua" class="btn btn-success">TÍNH TRUNG BÌNH</button>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="ketQua">Kết Quả</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BÀI TẬP 3: QUY ĐỔI TIỀN  -->
+        <div class="bai3">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center">BT3: QUY ĐỔI TIỀN</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-gruop">
+                        <p>NHẬP SỐ TIỀN USD</p>
+                        <input class="form-control" type="number" id="tienDo">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btndoiTien" class="btn btn-success">QUY ĐỔI TIỀN VIỆT</button>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="tienVnd">Kết Quả</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BÀI TẬP 4: TÍNH CHU VI VÀ DIỆN TÍCH HCN  -->
+        <div class="bai4">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center">BT4: TÍNH CHU VI, DIỆN TÍCH HCN</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-gruop">
+                        <p>NHẬP CHIỀU DÀI</p>
+                        <input class="form-control" type="number" id="chieuDai">
+                    </div>
+                    <div class="form-gruop">
+                        <p>NHẬP CHIỀU RỘNG</p>
+                        <input class="form-control" type="number" id="chieuRong">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnketQua" class="btn btn-success">TÍNH KẾT QUẢ</button>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="result1">Chu vi:</span>
+                    </div>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="result2">Diện tích:</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BÀI TẬP 5: TÍNH TỔNG 2 KÝ SỐ  -->
+        <div class="bai5">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="text-center">BT5: TÍNH TỔNG 2 KÝ SỐ</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-gruop">
+                        <p>NHẬP SỐ CÓ HAI CHỮ SỐ</p>
+                        <input class="form-control" type="number" id="soNhap">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnTongkyso" class="btn btn-success">TÍNH KẾT QUẢ</button>
+                    <div class="mt-2 text-center">
+                        <br>
+                        <span id="haiKyso">Kết Quả</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
